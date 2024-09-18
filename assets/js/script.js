@@ -7,6 +7,7 @@ const buttons = document.getElementsByClassName("control-btn");
 let playerScore = 0;
 let computerScore = 0;
 
+
 /**
  * Buttons event listener
  */
@@ -32,9 +33,8 @@ function computerRandomChoice() {
  */
 
 function playGame(playerChoice) {
-    let computerChoice = computerRandomChoice();  // Use the correct function to get computer's choice
+    let computerChoice = computerRandomChoice();  
 
-    // Determine the result
     if (playerChoice === computerChoice) {
         alert(`It's a draw! You both chose ${playerChoice}`);
         console.log(`Player choice: ${playerChoice}`); 
@@ -51,5 +51,41 @@ function playGame(playerChoice) {
         document.getElementById("computer-score").textContent = computerScore;
         alert(`You Lose! ${computerChoice} beats ${playerChoice}`);
     }
-}
+    checkWinner();
+
+    }
+
+  
+/**
+ *  Check winner reset score once computer or player wins 3
+ *
+ */
+
+
+function checkWinner() {
+    if (playerScore === 3) {
+    setTimeout(function() {
+    alert("You won the game!");
+    resetScores();
+    }, 500); 
+    
+    } else if (computerScore === 3) {
+    setTimeout(function() {
+    alert("The computer won the game!");
+    resetScores();
+    }, 500); 
+            }
+        }
+
+function resetScores() {
+        playerScore = 0;
+        computerScore = 0;
+        document.getElementById("player-score").textContent = playerScore;
+        document.getElementById("computer-score").textContent = computerScore;
+    }
+    
+
+/**
+ * Function to delay alert
+ */
 
