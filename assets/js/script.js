@@ -31,6 +31,20 @@ function computerChoice(){
   * Main function
   */
 
- function runGame(playerChoice){
-    
- }
+ function playGame(playerChoice){
+    computerSelection= computerChoice();
+
+ } if (playerChoice === computerChoice){
+        return alert `It's a draw!, you both chose ${playerChoice}`;
+} else if (
+    (playerChoice === "rock" && computerChoice === "scissors") ||
+    (playerChoice === "scissors" && computerChoice === "paper") ||
+    (playerChoice === "paper" && computerChoice === "rock")
+) {
+    return `You Win! ${playerChoice} beats ${computerChoice}` 
+} else {
+     return `You Lose! ${computerChoice} beats ${playerChoice}`
+
+}
+
+
