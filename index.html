@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1 class="heading">Rock, Paper, Scissors!</h1>
-    <script src="assets/js/script.js"></script>
+
     
     <div class="game-area">
         <div class="rules">
@@ -28,9 +28,9 @@
         <div class="player">
            <p> Pick your fighter:</p>
            <img id="player-image">
-           <button class="control-btn" aria-label="Rock" data-value="0">Rock</button>
-           <button class="control-btn" aria-label="Paper" data-value="1">Paper</button>
-           <button class="control-btn" aria-label="Scissors" data-value="2">Scissors</button>
+           <button class="control-btn" aria-label="Rock" data-choice="rock">Rock</button>
+           <button class="control-btn" aria-label="Paper" data-choice="paper">Paper</button>
+           <button class="control-btn" aria-label="Scissors" data-choice="scissors">Scissors</button>
         </div>
 
         <div class="score-area">
@@ -38,5 +38,6 @@
         <p class="scores">Your Score: <span id="player-score">0</span></p>
         </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

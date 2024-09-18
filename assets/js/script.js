@@ -1,50 +1,55 @@
 /**
- * Constant variables for the game and choices
+ * Variables for the game and choices
  */
 
-const choices= ["rock", "paper", "scissors"];
-const playerScore= document.getElementById("player-score")
-const computerScore=document.getElementById("computer-score")
+const choices = ["rock", "paper", "scissors"];
+const buttons = document.getElementsByClassName("control-btn");
+let playerScore = 0;
+let computerScore = 0;
 
+/**
+ * Buttons event listener
+ */
 
- /**
-  * Buttons event listener
-  */
-
- for (let button of buttons){
-    button.addEventListener("click", function(){
-        let playerChoice= this.getAttribute("data-value");
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        let playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
     });
- }
+}
 
 /**
  * Get random computer choice function
  */
 
-function computerChoice(){
-    const randomSelection= Math.floor(Math.random() * 3);
-    return choices(randomSelection);
+function computerRandomChoice() {
+    const randomSelection = Math.floor(Math.random() * 3);
+    return choices[randomSelection];
 }
 
- /**
-  * Main function
-  */
+/**
+ * Main function
+ */
 
- function playGame(playerChoice){
-    computerSelection= computerChoice();
+function playGame(playerChoice) {
+    let computerChoice = computerRandomChoice();  // Use the correct function to get computer's choice
 
- } if (playerChoice === computerChoice){
-        return alert `It's a draw!, you both chose ${playerChoice}`;
-} else if (
-    (playerChoice === "rock" && computerChoice === "scissors") ||
-    (playerChoice === "scissors" && computerChoice === "paper") ||
-    (playerChoice === "paper" && computerChoice === "rock")
-) {
-    return `You Win! ${playerChoice} beats ${computerChoice}` 
-} else {
-     return `You Lose! ${computerChoice} beats ${playerChoice}`
-
+    // Determine the result
+    if (playerChoice === computerChoice) {
+        alert(`It's a draw! You both chose ${playerChoice}`);
+        console.log(`Player choice: ${playerChoice}`); 
+    } else if (
+        (playerChoice === "rock" && computerChoice === "scissors") ||
+        (playerChoice === "scissors" && computerChoice === "paper") ||
+        (playerChoice === "paper" && computerChoice === "rock")
+    ) {
+        playerScore++;
+        document.getElementById("player-score").textContent = playerScore;
+        alert(`You Win! ${playerChoice} beats ${computerChoice}`);
+    } else {
+        computerScore++;
+        document.getElementById("computer-score").textContent = computerScore;
+        alert(`You Lose! ${computerChoice} beats ${playerChoice}`);
+    }
 }
-
 
