@@ -13,18 +13,25 @@
 <body>
     <h1 class="heading">Rock, Paper, Scissors!</h1>
     <script src="assets/js/script.js"></script>
+    
     <div class="game-area">
         <div class="rules">
             <p> Here are the rules:</p>
             <p>Rock crushes scissors, scissors cuts paper, paper covers rock.</p>
             <p>First to win 3 games wins!</p>
         </div>
+        
         <div class="computer">
 
         </div>
+        
         <div class="player">
-           
+           <p> Pick your fighter:</p>
+           <button class="control-btn" aria-label="Rock" data-value="0">Rock</button>
+           <button class="control-btn" aria-label="Paper" data-value="1">Paper</button>
+           <button class="control-btn" aria-label="Scissors" data-value="2">Scissors</button>
         </div>
+
         <div class="score-area">
             <p class="scores">Computer's score: <span id="computer-score">0</span></p>
         <p class="scores">Your Score: <span id="player-score">0</span></p>
