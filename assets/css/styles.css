@@ -12,10 +12,16 @@ body{
     text-align: center;
 }
 /* Header */
+
+header{
+padding-top: 30vh;
+    }
+
 .heading{
     font-size: 3rem;
-    margin-top: 50px;
-    padding-top: 50px;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    position: relative;
 }
 
 h2{
@@ -24,10 +30,13 @@ h2{
 /* Game area*/
 .game-area {
 width:100%;
-padding: 20px;
+padding-bottom: 50px;
 max-width: 500px;
 }
 
+.rules{
+    padding:20px;
+}
 
 /* Style to hide computer and player choice on page load*/
 
@@ -35,6 +44,8 @@ max-width: 500px;
 #player-image, #computer-image{
     width: 100px;
     height: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 .computer img, .player img{
@@ -72,42 +83,43 @@ footer {
     left:0;
 }
 
+
 /* Media Queries 600px max width */
-@media screen and (max-width: 600px){
-.game-area { 
-    max-width: 90%;
-    padding: 10px;
-}
+@media screen and (max-width: 600px) {
+    .game-area {
+        max-width: 90%;
+        padding: 10px;
+    }
 
-.heading{
-font-size: 2.5rem;
-padding-top:100px;
-margin-top: 10px;
-}
+    .heading {
+        font-size: 2.5rem;
+        padding-top: 5vh;
+        margin-top: 5vh;
+    }
 
-.rules{
-font-size: .9rem;
-}
+    .rules {
+        font-size: 0.9rem;
+    }
 
-.computer img, .player img {
-height: 80px;
-width: 80px;
-}
+    .computer img, .player img {
+        height: 80px;
+        width: 80px;
+    }
 
-
-.scores{
-    font-size: 1rem;
+    .score-area {
+        font-size: 1rem;
+    }
 }
 
 /* Media Queries 400px max width */
-@media screen and (max-width: 400px){
-.heading{
-    font-size: 2rem;
-    margin-top: 100px;
-}
+@media screen and (max-width: 400px) {
+    .heading {
+        font-size: 2rem;
+        margin-top: 5vh;
+    }
 
-.computer img, .player img {
-height: 50px;
-width:50px
+    .computer img, .player img {
+        height: 50px;
+        width: 50px;
+    }
 }
-}};
