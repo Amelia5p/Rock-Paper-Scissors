@@ -6,7 +6,8 @@ const choices = ["rock", "paper", "scissors"];
 const buttons = document.getElementsByClassName("control-btn");
 let playerScore = 0;
 let computerScore = 0;
-
+const playerImage= document.getElementById("player-image")
+const computerImage= document.getElementById("computer-image")
 
 /**
  * Buttons event listener
@@ -33,7 +34,15 @@ function computerRandomChoice() {
  */
 
 function playGame(playerChoice) {
-    let computerChoice = computerRandomChoice();  
+    
+    playerImage.src = `assets/images/${playerChoice}.png`;
+    playerImage.alt = playerChoice;
+
+    let computerChoice = computerRandomChoice(); 
+    
+    computerImage.src = `assets/images/${computerChoice}.png`;
+    computerImage.alt = computerChoice;
+    
 
     if (playerChoice === computerChoice) {
         alert(`It's a draw! You both chose ${playerChoice}`);
@@ -57,7 +66,8 @@ function playGame(playerChoice) {
 
   
 /**
- *  Check winner reset score once computer or player wins 3
+ * Function toCheck winner, reset score once computer or player wins 3, 
+ * Function to delay alert
  *
  */
 
@@ -85,7 +95,5 @@ function resetScores() {
     }
     
 
-/**
- * Function to delay alert
- */
+
 
