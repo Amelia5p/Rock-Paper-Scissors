@@ -2,6 +2,7 @@
  * Variables for the game and choices
  */
 
+
 const choices = ["rock", "paper", "scissors"];
 const buttons = document.getElementsByClassName("control-btn");
 let playerScore = 0;
@@ -19,6 +20,9 @@ for (let button of buttons) {
         playGame(playerChoice);
     });
 }
+
+
+
 
 /**
  * Get random computer choice function
