@@ -1,22 +1,31 @@
-/**
- * Variables for the game and choices
- */
-
-
+ // Variables for the game and choices
+ 
 const choices = ["rock", "paper", "scissors"];
 const buttons = document.getElementsByClassName("control-btn");
 let playerScore = 0;
 let computerScore = 0;
 const playerImage= document.getElementById("player-image")
 const computerImage= document.getElementById("computer-image")
+const playerDiv = document.getElementById("player-div");
+const computerDiv = document.getElementById("computer-div");
 
-/**
- * Buttons event listener
- */
+
+// Hide computer and player divs
+
+computerDiv.classList.add("hidden");
+playerDiv.classList.add("hidden");
+
+
+// Buttons event listener
+ 
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
         let playerChoice = this.getAttribute("data-choice");
+// Show computer and player divs
+        playerDiv.classList.remove("hidden");
+        computerDiv.classList.remove("hidden");
+
         playGame(playerChoice);
     });
 }
@@ -24,9 +33,8 @@ for (let button of buttons) {
 
 
 
-/**
- * Get random computer choice function
- */
+
+ // Get random computer choice function
 
 function computerRandomChoice() {
     const randomSelection = Math.floor(Math.random() * 3);
@@ -68,11 +76,11 @@ function playGame(playerChoice) {
     }
 
   
-/**
- * Function toCheck winner, reset score once computer or player wins 3, 
- * Function to delay alert
- *
- */
+
+  /* Function to Check winner, reset score once computer or player wins 3, 
+  Function to delay alert*/
+ 
+ 
 
 
 function checkWinner() {
