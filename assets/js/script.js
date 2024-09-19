@@ -52,7 +52,7 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${computerChoice}.png`;
     computerImage.alt = computerChoice;
     if (playerChoice === computerChoice) {
-        // replaced alert with a h1 element that i can change the inner html of if i win or loose 
+//  h1 element that I can change the inner html of if i win or loose 
         document.getElementById("win-or-lose").innerHTML = "It's a draw!";
     }
     else if (
@@ -62,41 +62,19 @@ function playGame(playerChoice) {
 ) {
 playerScore++;
 document.getElementById("player-score").textContent = playerScore;
-// replaced alert with a h1 element that i can change the inner html of if i win or loose 
+//  h1 element that i can change the inner html of if i win or loose 
 document.getElementById("win-or-lose").innerHTML = "You Win!";
 
 } else {
 computerScore++;
 document.getElementById("computer-score").textContent = computerScore;
-// replaced alert with a h1 element that i can change the inner html of if i win or loose 
+// h1 element that i can change the inner html of if i win or loose 
 document.getElementById("win-or-lose").innerHTML = "You lose!";
 }
 
 checkWinner();
 }
-
-
-    // if (playerChoice === computerChoice) {
-    //     alert(`It's a draw! You both chose ${playerChoice}`);
-    //     console.log(`Player choice: ${playerChoice}`); 
-    // } else if (
-    //     (playerChoice === "rock" && computerChoice === "scissors") ||
-    //     (playerChoice === "scissors" && computerChoice === "paper") ||
-    //     (playerChoice === "paper" && computerChoice === "rock")
-    // ) {
-    //     playerScore++;
-    //     document.getElementById("player-score").textContent = playerScore;
-    //     alert(`You Win! ${playerChoice} beats ${computerChoice}`);
-    // } else {
-    //     computerScore++;
-    //     document.getElementById("computer-score").textContent = computerScore;
-    //     alert(`You Lose! ${computerChoice} beats ${playerChoice}`);
-    // }
-    
-
-  
-
-  /* Function to Check winner, reset score once computer or player wins 3 games, 
+/* Function to check winner, reset score once computer or player wins 3 games, 
   Function to delay alert*/
  
  

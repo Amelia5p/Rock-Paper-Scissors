@@ -1,32 +1,28 @@
 /* General styles */
 
 body{
-    background-color: rgb(243, 167, 219);
-    font-family: Poppins, sans-serif;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    text-align: center;
+background-color: rgb(243, 167, 219);
+font-family: Poppins, sans-serif;
+padding: 0;
+display: flex;
+align-items: center;
+height: 100vh;
+flex-direction: column;
+text-align: center;
 }
 /* Header */
 
-header{
-padding-top: 30px;
-    }
-
 .heading{
-    font-size: 3rem;
-    margin-top: 10vh;
-    padding-top: 5vh;
-    position: relative;
+font-size: 3rem;
+margin-top: 5vh;
+padding-top: 5vh;
+position: relative;
 }
 
 h2{
-    font-size: 1rem;
+font-size: 1rem;
 }
+
 /* Game area*/
 .game-area {
 width:100%;
@@ -35,106 +31,101 @@ max-width: 500px;
 }
 
 .rules{
-    padding:20px;
+padding:20px;
 }
 
 /* Style to hide computer and player choice on page load*/
 
 .hidden {
-    display: none;
+display: none;
 }
 
 #player-image, #computer-image{
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
+width: 50px;
+height: 50px;
+display: block;
+margin: 0 auto;
 }
 
 .control-btn {
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin: 5px;
-    width:100px;
-    height:100px
+border: none;
+background: none;
+cursor: pointer;
+margin: 5px;
+width:100px;
+height:100px
 }
 
 .control-btn img {
-    width: 80px;
-    height: 80px;
+width: 80px;
+height: 80px;
 }
 
 .fighter {
-    color:rgb(255, 77, 0);
+color:rgb(255, 77, 0);
 }
+
 /* Scores */
 
-/* worl inner html */
-
 #win-or-lose{
-    background-color: aliceblue;
-    font-style: italic;
+background-color: aliceblue;
+font-style: italic;
 }
 .score-area{
-    font-size: 1rem;
-    margin-bottom:10px;
+font-size: 1rem;
+margin-bottom:10px;
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left:0;
+margin-top: 40px;
+background-color: black;
+color: white;
+padding: 10px 0;
+width: 100%;
+text-align: center;
+position: fixed;
+bottom: 0;
+left:0;
 }
 
 
 /* Media Queries 600px max width */
 @media screen and (max-width: 600px) {
-    .game-area {
-        max-width: 90%;
-        padding: 10px;
-    }
+.game-area {
+max-width: 90%;
+padding: 10px;
+}
 
-    .heading {
-        font-size: 2.5rem;
-        padding-top: 5vh;
-        margin-top: 5vh;
-    }
+.heading {
+font-size: 2.5rem;
+padding-top: 5vh;
+margin-top: 5vh;
+}
 
-    .rules {
-        font-size: 0.9rem;
-    }
+.rules {
+font-size: 0.9rem;
+}
 
-    .computer img, .player img {
-        height: 80px;
-        width: 80px;
-    }
+.computer img, .player img {
+height: 80px;
+width: 80px;
+}
 
-    .score-area {
-        font-size: 1rem;
-    }
+.score-area {
+font-size: 1rem;
+}
 }
 
 /* Media Queries 400px max width */
 @media screen and (max-width: 400px) {
-    .heading {
-        font-size: 2rem;
-        margin-top: 5vh;
-    }
-
-    .computer img, .player img {
-        height: 50px;
-        width: 50px;
-    }
+.heading {
+font-size: 2rem;
+margin-top: 10vh;
 }
 
-
-
-
+.computer img, .player img {
+height: 50px;
+width: 50px;
+}
+}
