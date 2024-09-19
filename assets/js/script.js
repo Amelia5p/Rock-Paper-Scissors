@@ -65,7 +65,6 @@ function playGame(playerChoice) {
         alert(`You Lose! ${computerChoice} beats ${playerChoice}`);
     }
     checkWinner();
-
     }
 
   
