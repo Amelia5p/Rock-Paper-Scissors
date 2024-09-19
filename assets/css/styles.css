@@ -18,6 +18,9 @@ body{
     padding-top: 50px;
 }
 
+h2{
+    font-size: 1rem;
+}
 /* Game area*/
 .game-area {
 width:100%;
@@ -70,7 +73,7 @@ footer {
 }
 
 /* Media Queries 600px max width */
-
+@media screen and (max-width: 600px){
 .game-area { 
     max-width: 90%;
     padding: 10px;
@@ -96,7 +99,7 @@ width: 80px;
 }
 
 /* Media Queries 400px max width */
-
+@media screen and (max-width: 400px){
 .heading{
     font-size: 2rem;
     margin-top: 80px;
@@ -106,3 +109,5 @@ width: 80px;
 height: 50px;
 width:50px
 }
+}
+};
