@@ -11,8 +11,9 @@
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    <h1 class="heading">Rock, Paper, Scissors!</h1>
-
+    <header>
+        <h1 class="heading">Rock, Paper, Scissors!</h1>
+    </header>
     
     <div class="game-area">
         <div class="rules">
@@ -22,15 +23,21 @@
         </div>
         
         <div class="computer">
-            <img id="computer-image">
+            <img id="computer-image" src="" alt="Rock paper scissors">
         </div>
         
         <div class="player">
-           <p> Pick your fighter:</p>
-           <img id="player-image">
-           <button class="control-btn" aria-label="Rock" data-choice="rock">Rock</button>
-           <button class="control-btn" aria-label="Paper" data-choice="paper">Paper</button>
-           <button class="control-btn" aria-label="Scissors" data-choice="scissors">Scissors</button>
+            <img src="" alt="">
+           <h2 class="fighter"> Pick your fighter:</h2>
+           <button class="control-btn" aria-label="Rock" data-choice="rock">
+            <img src="assets/images/rock.png" alt="rock">
+           </button>
+           <button class="control-btn" aria-label="Paper" data-choice="paper">
+            <img src="assets/images/paper.png" alt="paper">
+           </button>
+           <button class="control-btn" aria-label="Scissors" data-choice="scissors">
+            <img src="assets/images/scissors.png" alt="scissors">
+           </button>
         </div>
 
         <div class="score-area">
@@ -38,6 +45,7 @@
         <p class="scores">Your Score: <span id="player-score">0</span></p>
         </div>
     </div>
+    <footer></footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
