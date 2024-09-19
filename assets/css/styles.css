@@ -70,6 +70,12 @@ max-width: 500px;
 }
 /* Scores */
 
+/* worl inner html */
+
+#win-or-lose{
+    background-color: aliceblue;
+    font-style: italic;
+}
 .score-area{
     font-size: 1rem;
     margin-bottom:10px;
@@ -128,3 +134,7 @@ footer {
         width: 50px;
     }
 }
+
+
+
+

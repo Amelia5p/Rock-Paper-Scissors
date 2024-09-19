@@ -18,11 +18,11 @@ playerDiv.classList.add("hidden");
 
 // Buttons event listener
  
-
 for (let button of buttons) {
     button.addEventListener("click", function() {
         let playerChoice = this.getAttribute("data-choice");
-// Show computer and player divs
+
+        // Show computer and player divs
         playerDiv.classList.remove("hidden");
         computerDiv.classList.remove("hidden");
 
@@ -31,10 +31,7 @@ for (let button of buttons) {
 }
 
 
-
-
-
- // Get random computer choice function
+// Get random computer choice function
 
 function computerRandomChoice() {
     const randomSelection = Math.floor(Math.random() * 3);
@@ -54,35 +51,55 @@ function playGame(playerChoice) {
     
     computerImage.src = `assets/images/${computerChoice}.png`;
     computerImage.alt = computerChoice;
-    
-
     if (playerChoice === computerChoice) {
-        alert(`It's a draw! You both chose ${playerChoice}`);
-        console.log(`Player choice: ${playerChoice}`); 
-    } else if (
-        (playerChoice === "rock" && computerChoice === "scissors") ||
-        (playerChoice === "scissors" && computerChoice === "paper") ||
-        (playerChoice === "paper" && computerChoice === "rock")
-    ) {
-        playerScore++;
-        document.getElementById("player-score").textContent = playerScore;
-        alert(`You Win! ${playerChoice} beats ${computerChoice}`);
-    } else {
-        computerScore++;
-        document.getElementById("computer-score").textContent = computerScore;
-        alert(`You Lose! ${computerChoice} beats ${playerChoice}`);
+        // replaced alert with a h1 element that i can change the inner html of if i win or loose 
+        document.getElementById("win-or-lose").innerHTML = "It's a draw!";
     }
-    checkWinner();
-    }
+    else if (
+(playerChoice === "rock" && computerChoice === "scissors") ||
+(playerChoice === "scissors" && computerChoice === "paper") ||
+(playerChoice === "paper" && computerChoice === "rock")
+) {
+playerScore++;
+document.getElementById("player-score").textContent = playerScore;
+// replaced alert with a h1 element that i can change the inner html of if i win or loose 
+document.getElementById("win-or-lose").innerHTML = "You Win!";
+
+} else {
+computerScore++;
+document.getElementById("computer-score").textContent = computerScore;
+// replaced alert with a h1 element that i can change the inner html of if i win or loose 
+document.getElementById("win-or-lose").innerHTML = "You lose!";
+}
+
+checkWinner();
+}
+
+
+    // if (playerChoice === computerChoice) {
+    //     alert(`It's a draw! You both chose ${playerChoice}`);
+    //     console.log(`Player choice: ${playerChoice}`); 
+    // } else if (
+    //     (playerChoice === "rock" && computerChoice === "scissors") ||
+    //     (playerChoice === "scissors" && computerChoice === "paper") ||
+    //     (playerChoice === "paper" && computerChoice === "rock")
+    // ) {
+    //     playerScore++;
+    //     document.getElementById("player-score").textContent = playerScore;
+    //     alert(`You Win! ${playerChoice} beats ${computerChoice}`);
+    // } else {
+    //     computerScore++;
+    //     document.getElementById("computer-score").textContent = computerScore;
+    //     alert(`You Lose! ${computerChoice} beats ${playerChoice}`);
+    // }
+    
 
   
 
-  /* Function to Check winner, reset score once computer or player wins 3, 
+  /* Function to Check winner, reset score once computer or player wins 3 games, 
   Function to delay alert*/
  
  
-
-
 function checkWinner() {
     if (playerScore === 3) {
     setTimeout(function() {
