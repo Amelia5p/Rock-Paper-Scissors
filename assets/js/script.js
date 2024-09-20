@@ -9,6 +9,7 @@ const computerImage= document.getElementById("computer-image")
 const playerDiv = document.getElementById("player-div");
 const computerDiv = document.getElementById("computer-div");
 const rulesDiv= document.querySelector(".rules")
+const winOrLose= document.getElementById("win-or-lose");
 
 // Hide computer and player divs
 
@@ -24,6 +25,9 @@ for (let button of buttons) {
 // Show computer and player divs
     playerDiv.classList.remove("hidden");
     computerDiv.classList.remove("hidden");
+
+// show win or lose div
+winOrLose.classList.remove("hidden")
 
     playGame(playerChoice);
     });
@@ -105,6 +109,7 @@ function resetScores() {
         rulesDiv.style.display = "block";
         computerDiv.classList.add("hidden");
         playerDiv.classList.add("hidden");
+        winOrLose.classList.add("hidden")
 
     }
     
