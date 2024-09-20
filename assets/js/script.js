@@ -8,7 +8,7 @@ const playerImage= document.getElementById("player-image")
 const computerImage= document.getElementById("computer-image")
 const playerDiv = document.getElementById("player-div");
 const computerDiv = document.getElementById("computer-div");
-const rulesDiv= document.getElementsByClassName("toggle-btn")
+const rulesDiv= document.querySelector(".rules")
 
 // Hide computer and player divs
 
@@ -28,7 +28,7 @@ for (let button of buttons) {
     playGame(playerChoice);
     });
 }
-
+// Hide rules div on click of buttons
 for (let button of buttons){
     button.addEventListener("click", function(){
         rulesDiv.style.display="none";
@@ -102,8 +102,12 @@ function resetScores() {
         computerScore = 0;
         document.getElementById("player-score").textContent = playerScore;
         document.getElementById("computer-score").textContent = computerScore;
+        rulesDiv.style.display = "block";
+        computerDiv.classList.add("hidden");
+        playerDiv.classList.add("hidden");
+
     }
     
 
-
+    
 

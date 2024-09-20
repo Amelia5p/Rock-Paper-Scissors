@@ -64,6 +64,15 @@ height: 80px;
 
 .fighter {
 color:rgb(255, 77, 0);
+padding-top:15px;
+}
+
+#computer-div{
+    background-color: aliceblue;
+}
+
+#player-div{
+    background-color: aliceblue;
 }
 
 /* Scores */
@@ -124,7 +133,7 @@ font-size: 1rem;
 @media screen and (max-width: 400px) {
 .heading {
 font-size: 2rem;
-margin-top: 10vh;
+margin-top: 5vh;
 }
 
 .computer img, .player img {
