@@ -69,10 +69,14 @@ padding-top:15px;
 
 #computer-div{
     background-color: aliceblue;
+    padding: 2px;
+   
 }
 
 #player-div{
     background-color: aliceblue;
+    padding: 2px;
+    
 }
 
 /* Scores */
@@ -80,12 +84,11 @@ padding-top:15px;
 #win-or-lose{
 background-color: aliceblue;
 font-style: italic;
+font-size: 2rem;
 }
-.score-area{
+.scores{
 font-size: 1rem;
-font-weight: 600;
-margin-bottom:10px;
-background-color: aquamarine;
+font-weight: 400;
 }
 
 /* Footer */
