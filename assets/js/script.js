@@ -10,18 +10,10 @@ const playerDiv = document.getElementById("player-div");
 const computerDiv = document.getElementById("computer-div");
 const rulesDiv= document.getElementsByClassName("toggle-btn")
 
-// Hide rules once game starts
-//document.getElementsByClassName("toggle-btn").onClick= function(){
-//document.getElementByClassName("rules").style.display = "none";
-
-
-
-
 // Hide computer and player divs
 
 computerDiv.classList.add("hidden");
 playerDiv.classList.add("hidden");
-
 
 // Buttons event listener
  
@@ -29,17 +21,17 @@ for (let button of buttons) {
     button.addEventListener("click", function() {
         let playerChoice = this.getAttribute("data-choice");
 
-        // Show computer and player divs
-        playerDiv.classList.remove("hidden");
-        computerDiv.classList.remove("hidden");
+// Show computer and player divs
+    playerDiv.classList.remove("hidden");
+    computerDiv.classList.remove("hidden");
 
-        playGame(playerChoice);
+    playGame(playerChoice);
     });
 }
 
 for (let button of buttons){
     button.addEventListener("click", function(){
-        rulesDiv.style.display=none;
+        rulesDiv.style.display="none";
     })
 }
 
