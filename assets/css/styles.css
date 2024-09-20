@@ -32,6 +32,7 @@ max-width: 500px;
 
 .rules{
 padding:20px;
+background-color: pink;
 }
 
 /* Style to hide computer and player choice on page load*/
@@ -73,7 +74,9 @@ font-style: italic;
 }
 .score-area{
 font-size: 1rem;
+font-weight: 600;
 margin-bottom:10px;
+background-color: aquamarine;
 }
 
 /* Footer */

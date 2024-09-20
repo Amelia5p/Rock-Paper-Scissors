@@ -8,6 +8,13 @@ const playerImage= document.getElementById("player-image")
 const computerImage= document.getElementById("computer-image")
 const playerDiv = document.getElementById("player-div");
 const computerDiv = document.getElementById("computer-div");
+const rulesDiv= document.getElementsByClassName("toggle-btn")
+
+// Hide rules once game starts
+//document.getElementsByClassName("toggle-btn").onClick= function(){
+//document.getElementByClassName("rules").style.display = "none";
+
+
 
 
 // Hide computer and player divs
@@ -30,6 +37,11 @@ for (let button of buttons) {
     });
 }
 
+for (let button of buttons){
+    button.addEventListener("click", function(){
+        rulesDiv.style.display=none;
+    })
+}
 
 // Get random computer choice function
 
