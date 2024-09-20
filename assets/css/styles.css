@@ -1,7 +1,7 @@
 /* General styles */
 
 body{
-background-color: rgb(243, 167, 219);
+background-color: #f3a7db;
 font-family: Poppins, sans-serif;
 padding: 0;
 display: flex;
@@ -32,7 +32,7 @@ max-width: 500px;
 
 .rules{
 padding:20px;
-background-color: pink;
+background-color: #ffc0cb;
 }
 
 /* Style to hide computer and player choice on page load*/
@@ -63,7 +63,7 @@ height: 80px;
 }
 
 .fighter {
-color:rgb(255, 77, 0);
+color:#ff4d00;
 padding-top:15px;
 }
 
@@ -130,6 +130,12 @@ width: 80px;
 .score-area {
 font-size: 1rem;
 }
+
+.control-btn {
+    width:80px;
+    height:80px;
+    margin:20px;
+}
 }
 
 /* Media Queries 400px max width */
@@ -143,4 +149,13 @@ margin-top: 5vh;
 height: 50px;
 width: 50px;
 }
+.control-btn {
+width:50px;
+height:50px;
+margin:20px
+    
+}
+
+
+
 }

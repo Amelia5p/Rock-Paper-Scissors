@@ -1,27 +1,11 @@
-
-Bug/errors:
- I had sguiggly bracket in wrong place so if statements placed outside the playGame function, fixed this.
- The score would only get to 2 before the DOM would alert the winner before updating the results-  make sure that the score is updated first, and then check for a winner after that.>> fix by setting delay time.
-
- didnt write code for media queries correctly, wasnt being applied, fixed this.
-
- images choice when opened pushed content up, used display block to keep them from doing this as a fiz
-
- https://www.c-sharpcorner.com/article/show-and-hide-divs-on-button-click-with-javascript/  used this
-
-
- used code for time out: https://www.w3schools.com/jsref/met_win_settimeout.asp
- pic : https://www.vecteezy.com/vector-art/690792-rock-paper-scissors-hand-icons
-
 # Rock, Paper, Scissors
 
 ## Site Overview
 Rock Paper Scissors is a user-friendly game for children and adults. 
 
-
 Live site: https://amelia5p.github.io/Rock-Paper-Scissors/
 
-![Responsive Site]() 
+![Responsive Site](assets/images/read-me-images/responsive.png) 
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
@@ -40,15 +24,16 @@ Wireframes were made in Balsamiq to ensure a clear and easy development process.
 ### Wireframes
 
 
-![wireframes]()
+![wireframes](assets/images/read-me-images/wf1.png)
+![wireframes](assets/images/read-me-images/wf2.png)
 
-### Color Palette 
+### Color Palettes
 
-![Color-palette]()
-
+![Color-palette1](assets/images/read-me-images/colors1.png)
+![Color-palette2](assets/images/read-me-images/colors2.png)
 ### Typography
 
-![Poppins Font]()
+![Poppins Font](assets/images/read-me-images/font.png)
 
 
 ## User Stories
@@ -59,14 +44,17 @@ Wireframes were made in Balsamiq to ensure a clear and easy development process.
 
 
 # Structure
-One page
+The website is one page only.
+
+![landing](assets/images/read-me-images/landing.png)
 
 ## Features
 
 ### Heading
+![heading](assets/images/read-me-images/heading.png)
 
 ### Game Area
-
+![Game area](assets/images/read-me-images/choice-full.png)
 ## Buttons
 
 ## Score
@@ -144,22 +132,22 @@ This site has been built on Gitpod, the code was then pushed to Github where it 
 
 From the <a href="https://github.com/Amelia5p/Rock-Paper-Scissors" target="_blank">Github repository</a> click on settings which is near the top op the right side of the page.
 
-![Deployment step one](assets/images/readme-images/dep-s1-readme.png)
+![Deployment step one](assets/images/read-me-images/dep-s1-readme.png)
 
 ### <ins>Step 2:</ins>
 From the options listed on the left hand side of the page, click 'Pages'.
 
-![Deployment step one](assets/images/readme-images/dep-s2-readme.png)
+![Deployment step one](assets/images/read-me-images/dep-s2-readme.png)
 
 ### <ins>Step 3: </ins>
 From the drop down menu under source select deploy from branch. From the dropdown menu's under branch select 'Main' and 'Root' then click save.
 
-![Deployment step one](assets/images/readme-images/dep-s3-readme.png)
+![Deployment step one](assets/images/read-me-images/dep-s3-readme.png)
 
 ### <ins>Result:</ins>
 The page will be refreshed and you will see the link to the live site.
 
-![Deployment step one](..assets/images/readme-images/dep-result-readme.png)
+![Deployment step one](assets/images/read-me-images/dep-result.png)
 
 
 ## Cloning Repository
@@ -222,6 +210,7 @@ There is now a forked copy on Github.
 ## Code / Educational Resources
 - Code institutes 'Love Maths' project.
 - <a href="https://www.w3schools.com/"> W3schools</a>
+- https://www.c-sharpcorner.com/article/show-and-hide-divs-on-button-click-with-javascript/ 
 
 # Acknowledgements 
 This is project two, created for the Code Institutes Full Stack Web Developer (eCommerce) course. I would like to thank my cohort facilitator and the Code Institute team for their support.
