@@ -1,161 +1,136 @@
 /* General styles */
-
 body{
-background-color: #f3a7db;
-font-family: Poppins, sans-serif;
-padding: 0;
-display: flex;
-align-items: center;
-height: 100vh;
-flex-direction: column;
-text-align: center;
+    background-color: #f3a7db;
+    font-family: Poppins, sans-serif;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
 }
 /* Header */
-
 .heading{
-font-size: 3rem;
-margin-top: 5vh;
-padding-top: 5vh;
-position: relative;
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 0;
+    padding-top: 5px;
+    position: relative;
 }
-
 h2{
-font-size: 1rem;
+    font-size: 1rem;
 }
-
 /* Game area*/
 .game-area {
-width:100%;
-padding-bottom: 50px;
-max-width: 500px;
+    width:100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 500px;
+    margin-bottom: 0;
 }
-
 .rules{
-padding:20px;
-background-color: #ffc0cb;
+    padding:10px;
+    background-color: #ffc0cb;
 }
-
 /* Style to hide computer and player choice on page load*/
-
 .hidden {
-display: none;
+    display: none;
 }
-
 #player-image, #computer-image{
-width: 50px;
-height: 50px;
-display: block;
-margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
 }
-
 .control-btn {
-border: none;
-background: none;
-cursor: pointer;
-margin: 5px;
-width:100px;
-height:100px
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 5px;
+    width:100px;
+    height:100px; 
+    padding-bottom: 10px;
 }
-
 .control-btn img {
-width: 80px;
-height: 80px;
+    width: 80px;
+    height: 80px;
 }
-
 .fighter {
-color:#ff4d00;
-padding-top:15px;
+    color:#ff4d00;
 }
-
 #computer-div{
     background-color: aliceblue;
     padding: 2px;
-   
+    margin:10px;
 }
-
 #player-div{
     background-color: aliceblue;
     padding: 2px;
-    
+    margin:10px;
 }
-
 /* Scores */
-
 #win-or-lose{
-background-color: aliceblue;
-font-style: italic;
-font-size: 2rem;
+    background-color: aliceblue;
+    font-style: italic;
+    font-size: 2rem;
+    margin:15px;
 }
 .scores{
-font-size: 1rem;
-font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400;
 }
-
 /* Footer */
 footer {
-margin-top: 40px;
-background-color: black;
-color: white;
-padding: 10px 0;
-width: 100%;
-text-align: center;
-position: fixed;
-bottom: 0;
-left:0;
+    margin-top: 40px;
+    background-color: black;
+    height:10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left:0;
 }
-
-
 /* Media Queries 600px max width */
 @media screen and (max-width: 600px) {
-.game-area {
-max-width: 90%;
-padding: 10px;
+    .game-area {
+        max-width: 90%;
+        padding: 10px;
+   }
+    .heading {
+        font-size: 2.5rem;
+        padding-top: 5vh;
+        margin-top: 5vh;
+   }
+    .rules {
+        font-size: 0.9rem;
+   }
+    .computer img, .player img {
+        height: 80px;
+        width: 80px;
+   }
+    .score-area {
+        font-size: 1rem;
+   }
+    .control-btn {
+        width:80px;
+        height:80px;
+        margin:20px;
+   }
 }
-
-.heading {
-font-size: 2.5rem;
-padding-top: 5vh;
-margin-top: 5vh;
-}
-
-.rules {
-font-size: 0.9rem;
-}
-
-.computer img, .player img {
-height: 80px;
-width: 80px;
-}
-
-.score-area {
-font-size: 1rem;
-}
-
-.control-btn {
-    width:80px;
-    height:80px;
-    margin:20px;
-}
-}
-
 /* Media Queries 400px max width */
 @media screen and (max-width: 400px) {
-.heading {
-font-size: 2rem;
-margin-top: 5vh;
-}
-
-.computer img, .player img {
-height: 50px;
-width: 50px;
-}
-.control-btn {
-width:50px;
-height:50px;
-margin:20px
-    
-}
-
-
-
+    .heading {
+        font-size: 2rem;
+        margin-top: 5vh;
+   }
+    .computer img, .player img {
+        height: 50px;
+        width: 50px;
+   }
+    .control-btn {
+        width:50px;
+        height:50px;
+        margin:20px 
+   }
 }

@@ -16,26 +16,31 @@
     <link rel="manifest" href="/site.webmanifest">  
     <title>Rock, Paper, Scissors</title>
 </head>
+
+
 <body>
     <header>
         <h1 class="heading">Rock, Paper, Scissors!</h1>
     </header>
+
     <!--Game Area-->
     <div class="game-area">
         <div class="rules">
             <p> Here are the rules:</p>
             <p>Rock crushes scissors, scissors cuts paper, paper covers rock.</p>
             <p>First to win 3 games wins!</p>
-        </div>
-            <!-- Computer's Choice Image -->
-    <div id="computer-div"class="computer hidden">
+    </div>
+
+    <!-- Computer's Choice Image -->
+    <div id="computer-div" class="computer-hidden">
         <h2>Computer's Choice</h2>
         <img id="computer-image" src="" alt="computer's choice">
         <!--Score-->
         <p class="scores">Score: <span id="computer-score">0</span></p>
     </div>
     <!-- This is the ID to target and change if I win or loose  -->
-    <h3 id="win-or-lose"></h3 >
+    <span id="win-or-lose"></span >
+
     <!-- Player's Choice Image -->
     <div id="player-div" class="player hidden">
         <h2>Your Choice</h2>
@@ -43,27 +48,27 @@
         <!--Score-->
         <p class="scores">Score: <span id="player-score">0</span></p>
         </div>
+    </div>    
 
-
-            <!-- Button/Choices -->
-             <div>
-           <h2 class="fighter"> Pick your fighter:</h2>
-           <div class= "buttons-rps">
-           <button class="control-btn toggle-btn" aria-label="Rock" data-choice="rock">
-            <img src="assets/images/rock.png" alt="rock">
-            <p class="rps">Rock</p>
-           </button>
-           <button class="control-btn toggle-btn" aria-label="Paper" data-choice="paper">
-            <img src="assets/images/paper.png" alt="paper">
-            <p class="rps">Paper</p>
-           </button>
-           <button class="control-btn toggle-btn" aria-label="Scissors" data-choice="scissors">
-            <img src="assets/images/scissors.png" alt="scissors">
-            <p class="rps">Scissors</p>
-           </button>
+    <!-- Button/Choices -->
+    <div>
+        <h2 class="fighter"> Pick your fighter:</h2>
+        <div class= "buttons-rps">
+        <button class="control-btn toggle-btn" aria-label="Rock" data-choice="rock">
+        <img src="assets/images/rock.png" alt="rock">
+        <span class="rps">Rock</span>
+        </button>
+        <button class="control-btn toggle-btn" aria-label="Paper" data-choice="paper">
+        <img src="assets/images/paper.png" alt="paper">
+        <span class="rps">Paper</span>
+        </button>
+        <button class="control-btn toggle-btn" aria-label="Scissors" data-choice="scissors">
+        <img src="assets/images/scissors.png" alt="scissors">
+        <span class="rps">Scissors</span>
+        </button>
            </div>
-        </div>
+    </div>
     <script src="assets/js/script.js"></script>
-    <footer></footer>
+
 </body>
 </html>
