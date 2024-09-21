@@ -1,7 +1,7 @@
 # Rock, Paper, Scissors
 
 ## Site Overview
-Rock Paper Scissors is a user-friendly game for children and adults. 
+Rock, Paper, Scissors is a simple, fun, and user-friendly game enjoyed by both children and adults. Players choose one of three options (rock, paper, or scissors) while the computer randomly selects its own choice. With each round, the outcome and winner is random which adds excitement! 
 
 Live site: https://amelia5p.github.io/Rock-Paper-Scissors/
 
@@ -51,18 +51,23 @@ The website is one page only.
 ## Features
 
 ### Heading
+The heading shows the game name: Rock, Paper, Scissors with a clear contrast to the background so it stands out.
+
 ![heading](assets/images/read-me-images/heading.png)
 
 ### Game Area
 ![Game area](assets/images/read-me-images/choice-full.png)
 ## Buttons
-
+There are three interactive buttons for rock, paper and scissors and a clear instruction for the user to chose an option.
+![Buttons](assets/images/read-me-images/pick-fighter.png)
 ## Score
-
+The score is counted for both the computer and the player up to 3 as stated in the rules.
+![Score](assets/images/read-me-images/score1.png)
 ## Alert
+Once the player or computer reaches a score of 3 there is an alert stating the winner of the game. Once you dismiss the alert, the game will reset making it very user friendly.
 
-### Footer
-The footer is located at the bottom of the page.
+![Alert](assets/images/read-me-images/alert.png)
+
 
 ### Responsiveness
 
@@ -118,8 +123,8 @@ Debugging and problem solving was done consistently throughout the development p
 
 List of some issues that arose:
 
-- I had a curly bracket bracket in the wrong place so that my if statements were wrongly placed outside of the playGame function, fixed this by simply moving the bracket.
-- The score would only get to 2 before the DOM would alert the winner before updating the results- make sure that the score is updated first, and then check for a winner after that, I fixed this by setting delay time. 
+- I had a curly bracket in the wrong place so that my if statements were wrongly placed outside of the playGame function, fixed this by simply moving the bracket.
+- The score would only get to 2 before the DOM would alert the winner before updating the results, I made sure that the score was updated first, and then check for a winner after that, I fixed this by setting delay time. 
 - I did not write the code for media queries correctly, so therefore it was not being applied, after inspection I fixed the code.
 - The images in the computer and player's choice section when opened pushed content up, used display block to keep them from doing this as a fix.
 
