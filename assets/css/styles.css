@@ -33,6 +33,16 @@ body{
     padding:10px;
     background-color: #ffc0cb;
 }
+
+.pick-fighter{
+    margin: 0 auto;
+}
+
+.buttons-rps{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
 /* Style to hide computer and player choice on page load*/
 .hidden {
     display: none;
@@ -73,9 +83,9 @@ body{
     margin-bottom: 0px;
 }
 
-.pick-fighter{
+/* .pick-fighter{
     display: inline-block;
-}
+} */
 /* Scores */
 #win-or-lose{
     background-color: aliceblue;
@@ -110,9 +120,7 @@ body{
         font-size: 1rem;
    }
     .control-btn {
-        width:80px;
         height:80px;
-        margin:20px;
    }
 }
 /*Media Queries 400px max width*/
@@ -126,11 +134,7 @@ body{
         width: 50px;
    }
     .control-btn {
-        width:50px;
         height:50px;
-        
-   }
-   .buttons-rps{
-    padding-right: 30px;
-   }
+    } 
+   
 }

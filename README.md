@@ -1,7 +1,7 @@
 # Rock, Paper, Scissors
 
 ## Site Overview
-Rock, Paper, Scissors is a simple, fun, and user-friendly game enjoyed by both children and adults. Players choose one of three options (rock, paper, or scissors) while the computer randomly selects its own choice. With each round, the outcome and winner is random which adds excitement! 
+Rock, Paper, Scissors is a simple, fun, and user-friendly game to be enjoyed by both children and adults. Players choose one of three options (rock, paper, or scissors) while the computer randomly selects its own choice. With each round, the outcome and winner is random which adds excitement! 
 
 Live site: https://amelia5p.github.io/Rock-Paper-Scissors/
 
