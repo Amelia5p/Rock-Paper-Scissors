@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google Fonts-->
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,900&display=swap');
-    </style>
-    <!--Link to stylesheet-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">  
-    <title>Rock, Paper, Scissors</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Google Fonts-->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,900&display=swap");
+        </style>
+        <!--Link to stylesheet-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        <title>Rock, Paper, Scissors</title>
+    </head>
 
+    <body>
+        <header>
+            <h1 class="heading">Rock, Paper, Scissors!</h1>
+        </header>
 
-<body>
-    <header>
-        <h1 class="heading">Rock, Paper, Scissors!</h1>
-    </header>
-
-    <!--Game Area-->
-    <div class="game-area">
-        <div class="rules">
-            <p> Here are the rules:</p>
-            <p>Rock crushes scissors, scissors cuts paper, paper covers rock.</p>
-            <p>First to win 3 games wins!</p>
-    </div>
-
-    <!-- Computer's Choice Image -->
-    <div id="computer-div" class="computer-hidden">
-        <h2>Computer's Choice</h2>
-        <img id="computer-image" src="" alt="computer's choice">
-        <!--Score-->
-        <p class="scores">Score: <span id="computer-score">0</span></p>
-    </div>
-    <!-- This is the ID to target and change if I win or loose  -->
-    <span id="win-or-lose"></span >
-
-    <!-- Player's Choice Image -->
-    <div id="player-div" class="player hidden">
-        <h2>Your Choice</h2>
-        <img id="player-image" src="" alt="player's choice">
-        <!--Score-->
-        <p class="scores">Score: <span id="player-score">0</span></p>
+        <!--Game Area-->
+        <div class="game-area">
+            <div class="rules">
+                <p>Here are the rules:</p>
+                <p>Rock crushes scissors, scissors cuts paper, paper covers rock.</p>
+                <p>First to win 3 games wins!</p>
         </div>
-    </div>    
 
-    <!-- Button/Choices -->
-    <div class="pick-fighter">
-        <h2 class="fighter"> Pick your fighter:</h2>
-        <div class= "buttons-rps">
-        <button class="control-btn toggle-btn" aria-label="Rock" data-choice="rock">
-        <img class="btn-img" src="assets/images/rock.png" alt="rock">
-        <span class="rps">Rock</span>
-        </button>
-        <button class="control-btn toggle-btn" aria-label="Paper" data-choice="paper">
-        <img class="btn-img"  src="assets/images/paper.png" alt="paper">
-        <span class="rps">Paper</span>
-        </button>
-        <button class="control-btn toggle-btn" aria-label="Scissors" data-choice="scissors">
-        <img class="btn-img" src="assets/images/scissors.png" alt="scissors">
-        <span class="rps">Scissors</span>
-        </button>
-           </div>
-    </div>
-    <script src="assets/js/script.js"></script>
+        <!-- Computer's Choice Image -->
+        <div id="computer-div" class="computer-hidden">
+            <h2>Computer's Choice</h2>
+                <!--Used transparent image in src as placeholder image-->
+                <img id="computer-image" src="assets/images/transparent.png" alt="computer's choice">
+                <!--Score-->
+                <p class="scores">Score: <span id="computer-score">0</span></p>
+            </div>
+            <!-- This is the ID to target and change if I win or loose  -->
+            <span id="win-or-lose"></span>
 
-</body>
+            <!-- Player's Choice Image -->
+            <div id="player-div" class="player hidden">
+                <h2>Your Choice</h2>
+                <!--Used transparent image in src as placeholder image-->
+                <img id="player-image" src="assets/images/transparent.png" alt="player's choice">
+                <!--Score-->
+                <p class="scores">Score: <span id="player-score">0</span></p>
+            </div>
+        </div>
+
+        <!-- Button/Choices -->
+        <div class="pick-fighter">
+            <h2 class="fighter">Pick your fighter:</h2>
+            <div class="buttons-rps">
+                <button class="control-btn toggle-btn" aria-label="Rock" data-choice="rock">
+                    <img class="btn-img" src="assets/images/rock.png" alt="rock">
+                    <span class="rps">Rock</span>
+                </button>
+                <button class="control-btn toggle-btn" aria-label="Paper" data-choice="paper">
+                    <img class="btn-img" src="assets/images/paper.png" alt="paper">
+                    <span class="rps">Paper</span>
+                </button>
+                <button class="control-btn toggle-btn" aria-label="Scissors" data-choice="scissors">
+                    <img class="btn-img" src="assets/images/scissors.png" alt="scissors">
+                    <span class="rps">Scissors</span>
+                </button>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

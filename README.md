@@ -62,6 +62,7 @@ There are three interactive buttons for rock, paper and scissors and a clear ins
 ![Buttons](assets/images/read-me-images/pick-fighter.png)
 ## Score
 The score is counted for both the computer and the player up to 3 as stated in the rules.
+
 ![Score](assets/images/read-me-images/score1.png)
 ## Alert
 Once the player or computer reaches a score of 3 there is an alert stating the winner of the game. Once you dismiss the alert, the game will reset making it very user friendly.
@@ -71,7 +72,7 @@ Once the player or computer reaches a score of 3 there is an alert stating the w
 
 ### Responsiveness
 
-The site is responsive from 270px and functions on a range of screen sizes. 
+The site is responsive from 320px and functions on a range of screen sizes. 
 
 ### Accessibility
 Aria-lables, alt text, color contrast and font selections were thoughtfully chosen to ensure an inclusive and accesible user experience.
@@ -93,7 +94,7 @@ The site was tested using Dev Tools on Google Chrome, Safari, Firefox and Edge a
 
 ## Responsiveness
 
-Responsiveness was tested with Chrome Dev Tools and by changing the viewport from 270px and upwards. I also checked responsiveness on 'Am I Responsive' and Responsive test tool.  I also tested it on an Iphone 12 mini and a Samsung Galaxy S21 ultra.
+Responsiveness was tested with Chrome Dev Tools and by changing the viewport from 320px and upwards. I also checked responsiveness on 'Am I Responsive' and Responsive test tool.  I also tested it on an Iphone 12 mini and a Samsung Galaxy S21 ultra.
 
 ## Lighthouse Testing
 The lighthouse testing was successful with scores above 90 for all four ratings (Performance, Accessibility, Best Practices and SEO).
