@@ -108,15 +108,20 @@ The lighthouse testing was successful with scores above 90 for all four ratings 
 
 HTML was tested through the W3C validator with no errors:
 
-![Code Validation]() 
+![Code Validation](assets/images/read-me-images/html.png) 
 
 
 #### CSS
 
 The CSS stylesheet was tested through the W3C Validator with no errors:
 
-![CSS Code Validation]() 
+![CSS Code Validation](assets/images/read-me-images/css.png) 
 
+#### JAVASCRIPT
+
+JavaScript was tested through Jshint with no errors:
+
+![CSS Code Validation](assets/images/read-me-images/javascript.png)
 
 # Bugs
 
@@ -128,6 +133,7 @@ List of some issues that arose:
 - The score would only get to 2 before the DOM would alert the winner before updating the results, I made sure that the score was updated first, and then check for a winner after that, I fixed this by setting delay time. 
 - I did not write the code for media queries correctly, so therefore it was not being applied, after inspection I fixed the code.
 - The images in the computer and player's choice section when opened pushed content up, used display block to keep them from doing this as a fix.
+- When testing my JavaScript code it threw the warning '"Functions declared within loops referencing an outer scoped variable may lead to confusing semantics."' I changed the for to a forEach loop which fixed the issue and cleared the warning.
 
 
 # Deployment

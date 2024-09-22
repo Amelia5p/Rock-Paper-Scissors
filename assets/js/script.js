@@ -4,11 +4,11 @@ const choices = ["rock", "paper", "scissors"];
 const buttons = document.getElementsByClassName("control-btn");
 let playerScore = 0;
 let computerScore = 0;
-const playerImage= document.getElementById("player-image")
-const computerImage= document.getElementById("computer-image")
+const playerImage= document.getElementById("player-image");
+const computerImage= document.getElementById("computer-image");
 const playerDiv = document.getElementById("player-div");
 const computerDiv = document.getElementById("computer-div");
-const rulesDiv= document.querySelector(".rules")
+const rulesDiv= document.querySelector(".rules");
 const winOrLose= document.getElementById("win-or-lose");
 
 // Hide computer and player divs
@@ -17,26 +17,27 @@ computerDiv.classList.add("hidden");
 playerDiv.classList.add("hidden");
 
 // Buttons event listener
- 
-for (let button of buttons) {
+ Array.from(buttons).forEach(function(button) {
     button.addEventListener("click", function() {
+       
         let playerChoice = this.getAttribute("data-choice");
 
-// Show computer and player divs
-    playerDiv.classList.remove("hidden");
-    computerDiv.classList.remove("hidden");
+        // Show computer and player divs
+        playerDiv.classList.remove("hidden");
+        computerDiv.classList.remove("hidden");
 
-// show win or lose div
-winOrLose.classList.remove("hidden")
+        // Show win or lose div
+        winOrLose.classList.remove("hidden");
 
-    playGame(playerChoice);
+        playGame(playerChoice);
     });
-}
+});
+
 // Hide rules div on click of buttons
 for (let button of buttons){
     button.addEventListener("click", function(){
         rulesDiv.style.display="none";
-    })
+    });
 }
 
 // Get random computer choice function
@@ -109,7 +110,7 @@ function resetScores() {
         rulesDiv.style.display = "block";
         computerDiv.classList.add("hidden");
         playerDiv.classList.add("hidden");
-        winOrLose.classList.add("hidden")
+        winOrLose.classList.add("hidden");
 
     }
     
