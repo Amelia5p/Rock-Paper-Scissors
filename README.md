@@ -140,18 +140,18 @@ Once the player or computer reaches a score of 3 there is an alert stating the w
 The site is responsive from 320px and functions on a range of screen sizes. 
 
 ### Accessibility
-Aria-lables, alt text, color contrast and font selections were thoughtfully chosen to ensure an inclusive and accesible user experience.
+Aria-labels, alt text, color contrast and font selections were thoughtfully chosen to ensure an inclusive and accessible user experience.
 
 ### Future features
 I would like to implement the following features in the future to allow for an improved user experience:
 
-- Add the options of 'Lizard' and 'Spock', this would expand possible outomes of the game making it more interesting.
+- Add the options of 'Lizard' and 'Spock', this would expand possible outcomes of the game making it more interesting.
 - Add a multiplayer mode so users can play against their friends.
 
 # Testing
 
 ## Feature Testing 
-The control buttons were tested across many broswers to ensure they were functioning correctly.
+The control buttons were tested across many browsers to ensure they were functioning correctly.
 
 ## Browsers Compatibility
 The site was tested using Dev Tools on Google Chrome, Safari, Firefox and Edge and functions and appears as it should across all major browsers. I also tested it on an Iphone 12 mini and a Samsung Galaxy S21 ultra.
@@ -202,11 +202,11 @@ List of some issues that arose:
 
 # Deployment
 
-This site has been built on Gitpod, the code was then pushed to Github where it was deployed.
+This site has been built on Gitpod, the code was then pushed to GitHub where it was deployed.
 
 ### <ins>Step 1:</ins>
 
-From the <a href="https://github.com/Amelia5p/Rock-Paper-Scissors" target="_blank">Github repository</a> click on settings which is near the top op the right side of the page.
+From the <a href="https://github.com/Amelia5p/Rock-Paper-Scissors" target="_blank">GitHub repository</a> click on settings which is near the top op the right side of the page.
 
 ![Deployment step one](assets/images/read-me-images/dep-s1-readme.png)
 
@@ -230,7 +230,7 @@ The page will be refreshed and you will see the link to the live site.
 
 ### <ins> Step 1: </ins>
 
-From the <a href="https://github.com/Amelia5p/Rock-Paper-Scissors" target="_blank">Github repository</a> click on the 'code' button.
+From the <a href="https://github.com/Amelia5p/Rock-Paper-Scissors" target="_blank">GitHub repository</a> click on the 'code' button.
 
 ### <ins> Step 2:</ins>
 
@@ -252,7 +252,7 @@ You now have a local copy of the Github repository.
 
 ### <ins>Step 1:</ins>
 
-From the <a href="https://github.com/Amelia5p/Rock-Paper-Scissors" target="_blank">Github repository</a> click on the 'fork' button in the top right corner of the page. 
+From the <a href="https://github.com/Amelia5p/Rock-Paper-Scissors" target="_blank">GitHub repository</a> click on the 'fork' button in the top right corner of the page. 
 
 ### <ins>Step 2:</ins> 
 
@@ -264,13 +264,13 @@ Click Create a Fork.
 
 ### <ins>Result:</ins>
 
-There is now a forked copy on Github.
+There is now a forked copy on GitHub.
 
 # Credits
 
 ## Image
 
-- The only visinle image I sourced was from Vecteezy https://www.vecteezy.com/vector-art/690792-rock-paper-scissors-hand-icons
+- The only visible image I sourced was from Vecteezy https://www.vecteezy.com/vector-art/690792-rock-paper-scissors-hand-icons
 - I also used a transparent image which is used as a placeholder image until a button is clicked and a random computer choice is made. I used this as the image source cannot be empty.  https://onlinepngtools.com/create-transparent-png
 
 ## Favicon
