@@ -77,7 +77,7 @@ document.getElementById("win-or-lose").innerHTML = "You Win!";
 computerScore++;
 document.getElementById("computer-score").textContent = computerScore;
 // h1 element that i can change the inner html of if i win or loose 
-document.getElementById("win-or-lose").innerHTML = "You lose!";
+document.getElementById("win-or-lose").innerHTML = "You Lose!";
 }
 
 checkWinner();
