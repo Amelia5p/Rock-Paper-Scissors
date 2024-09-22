@@ -1,7 +1,4 @@
  // Variables for the game and choices
-
-
-
  const choices = ["rock", "paper", "scissors"];
  const buttons = document.getElementsByClassName("control-btn");
  let playerScore = 0;
@@ -13,10 +10,7 @@
  const rulesDiv = document.querySelector(".rules");
  const winOrLose = document.getElementById("win-or-lose");
 
-
-
  // Hide computer and player divs
-
  computerDiv.classList.add("hidden");
  playerDiv.classList.add("hidden");
 
@@ -45,7 +39,6 @@
  }
 
  // Get random computer choice function
-
  function computerRandomChoice() {
      const randomSelection = Math.floor(Math.random() * 3);
      return choices[randomSelection];
@@ -90,9 +83,7 @@
 
 
  /* Function to check winner, reset score once computer or player wins 3 games, 
-   Function to delay alert*/
-
-
+    Function to delay alert*/
  function checkWinner() {
      if (playerScore === 3) {
          setTimeout(function() {
@@ -117,8 +108,7 @@
      computerDiv.classList.add("hidden");
      playerDiv.classList.add("hidden");
      winOrLose.classList.add("hidden");
-
- }
+}
     
 
     

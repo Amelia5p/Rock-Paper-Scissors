@@ -285,7 +285,7 @@ There is now a forked copy on GitHub.
 - <a href="https://imageresizer.com/crop-image">Resize images</a>
 
 ## Code / Educational Resources
-- Code institutes 'Love Maths' project.
+- Code institutes 'Love Maths' project and material.
 - <a href="https://www.w3schools.com/"> W3schools</a>
 - https://www.c-sharpcorner.com/article/show-and-hide-divs-on-button-click-with-javascript/ 
 
