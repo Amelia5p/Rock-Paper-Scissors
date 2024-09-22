@@ -7,11 +7,64 @@ Live site: https://amelia5p.github.io/Rock-Paper-Scissors/
 
 ![Responsive Site](assets/images/read-me-images/responsive.png) 
 
-<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+<details>
+<summary>Table of Contents </summary>
 
+- [Rock, Paper, Scissors](#rock--paper--scissors)
+  * [Site Overview](#site-overview)
+- [User Experience](#user-experience)
+  * [Design](#design)
+    + [Wireframes](#wireframes)
+    + [Color Palettes](#color-palettes)
+    + [Typography](#typography)
+  * [User Stories](#user-stories)
+    + [First time visitor goals](#first-time-visitor-goals)
+- [Structure](#structure)
+  * [Features](#features)
+    + [Heading](#heading)
+    + [Rules](#rules)
+    + [Game Area](#game-area)
+  * [Buttons](#buttons)
+  * [Score](#score)
+  * [Alert](#alert)
+    + [Responsiveness](#responsiveness)
+    + [Accessibility](#accessibility)
+    + [Future features](#future-features)
+- [Testing](#testing)
+  * [Feature Testing](#feature-testing)
+  * [Browsers Compatibility](#browsers-compatibility)
+  * [Responsiveness](#responsiveness-1)
+  * [Lighthouse Testing](#lighthouse-testing)
+  * [Code Validation](#code-validation)
+      - [HTML](#html)
+      - [CSS](#css)
+      - [JAVASCRIPT](#javascript)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+    + [<ins>Step 1:</ins>](#-ins-step-1---ins-)
+    + [<ins>Step 2:</ins>](#-ins-step-2---ins-)
+    + [<ins>Step 3: </ins>](#-ins-step-3----ins-)
+    + [<ins>Result:</ins>](#-ins-result---ins-)
+  * [Cloning Repository](#cloning-repository)
+    + [<ins> Step 1: </ins>](#-ins--step-1----ins-)
+    + [<ins> Step 2:</ins>](#-ins--step-2---ins-)
+    + [<ins>Step 3: </ins>](#-ins-step-3----ins--1)
+    + [<ins>Step 4: </ins>](#-ins-step-4----ins-)
+    + [<ins> Result: </ins>](#-ins--result----ins-)
+  * [Forking Repository](#forking-repository)
+    + [<ins>Step 1:</ins>](#-ins-step-1---ins--1)
+    + [<ins>Step 2:</ins>](#-ins-step-2---ins--1)
+    + [<ins>Step 3: </ins>](#-ins-step-3----ins--2)
+    + [<ins>Result:</ins>](#-ins-result---ins--1)
+- [Credits](#credits)
+  * [Image](#image)
+  * [Favicon](#favicon)
+  * [Other](#other)
+  * [Code / Educational Resources](#code---educational-resources)
+- [Acknowledgements](#acknowledgements)
 
-
-<!-- TOC end -->
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+</details>
 
 <br><br>
 
@@ -41,6 +94,7 @@ Wireframes were made in Balsamiq to ensure a clear and easy development process.
 ### First time visitor goals
 * As a first time user, I want to easily understand the purpose of the site and the game.
 * As a first time user, I want to be excited, intrigued and feel I am in a fun environment.
+* As a first time user, I want the game to function correctly.
 
 
 # Structure
@@ -55,15 +109,26 @@ The heading shows the game name: Rock, Paper, Scissors with a clear contrast to 
 
 ![heading](assets/images/read-me-images/heading.png)
 
+### Rules
+The rules are at the top of the page and are clear so the user knows what to do and what to expect.
+
+![rules](assets/images/read-me-images/rules.png)
+
 ### Game Area
+The game area is clear and simple, while still fun, it shows the rules and choices. Once a button has been clicked it reveals the images of the computers choice and your choice.
+
 ![Game area](assets/images/read-me-images/choice-full.png)
+
 ## Buttons
 There are three interactive buttons for rock, paper and scissors and a clear instruction for the user to chose an option.
+
 ![Buttons](assets/images/read-me-images/pick-fighter.png)
+
 ## Score
 The score is counted for both the computer and the player up to 3 as stated in the rules.
 
 ![Score](assets/images/read-me-images/score1.png)
+
 ## Alert
 Once the player or computer reaches a score of 3 there is an alert stating the winner of the game. Once you dismiss the alert, the game will reset making it very user friendly.
 
@@ -78,16 +143,15 @@ The site is responsive from 320px and functions on a range of screen sizes.
 Aria-lables, alt text, color contrast and font selections were thoughtfully chosen to ensure an inclusive and accesible user experience.
 
 ### Future features
+I would like to implement the following features in the future to allow for an improved user experience:
 
+- Add the options of 'Lizard' and 'Spock', this would expand possible outomes of the game making it more interesting.
+- Add a multiplayer mode so users can play against their friends.
 
 # Testing
 
 ## Feature Testing 
-
-
-
-
-
+The control buttons were tested across many broswers to ensure they were functioning correctly.
 
 ## Browsers Compatibility
 The site was tested using Dev Tools on Google Chrome, Safari, Firefox and Edge and functions and appears as it should across all major browsers. I also tested it on an Iphone 12 mini and a Samsung Galaxy S21 ultra.
@@ -99,7 +163,7 @@ Responsiveness was tested with Chrome Dev Tools and by changing the viewport fro
 ## Lighthouse Testing
 The lighthouse testing was successful with scores above 90 for all four ratings (Performance, Accessibility, Best Practices and SEO).
 
-![ lighthouse testing](assets/images/readme-images/home-lh.png)
+![ lighthouse testing](assets/images/read-me-images/lighthouse.png)
 
 
 ## Code Validation
@@ -206,7 +270,8 @@ There is now a forked copy on Github.
 
 ## Image
 
-- The only image I sourced was from Vecteezy https://www.vecteezy.com/vector-art/690792-rock-paper-scissors-hand-icons
+- The only visinle image I sourced was from Vecteezy https://www.vecteezy.com/vector-art/690792-rock-paper-scissors-hand-icons
+- I also used a transparent image which is used as a placeholder image until a button is clicked and a random computer choice is made. I used this as the image source cannot be empty.  https://onlinepngtools.com/create-transparent-png
 
 ## Favicon
 

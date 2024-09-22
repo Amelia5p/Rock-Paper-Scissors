@@ -18,15 +18,16 @@ body{
     padding-top: 5px;
     position: relative;
 }
-.choice-title {
-    font-size: 1rem;
-}
+
 /* Game area*/
 .game-area {
     width:100%;
     padding-top: 20px;
     max-width: 500px;
     margin-bottom: 0;
+}
+.choice-title {
+    font-size: 1rem;
 }
 .rules{
     padding:10px;
@@ -87,18 +88,7 @@ body{
     font-size: 1rem;
     font-weight: 400;
 }
-/* Footer */
-footer {
-    margin-top: 40px;
-    background-color: black;
-    height:10px;
-    color: white;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left:0;
-}
+
 /* Media Queries 600px max width */
 @media screen and (max-width: 600px) {
     .game-area {
