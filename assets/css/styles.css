@@ -61,6 +61,7 @@ body{
     width:100px;
     height:100px; 
     padding-bottom: 10px;
+    text-decoration: none;
 }
 .control-btn img {
     width: 80px;
