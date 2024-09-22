@@ -109,7 +109,3 @@
      playerDiv.classList.add("hidden");
      winOrLose.classList.add("hidden");
 }
-    
-
-    
-
